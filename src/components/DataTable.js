@@ -125,7 +125,7 @@ const DataTable = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 w-full flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white w-1/3 p-8 rounded shadow-lg">
+          <div className="bg-white w-10/12 mx-auto md:w-1/3 p-8 rounded shadow-lg">
             <h2 className="text-lg font-medium mb-4">Edit Submission</h2>
             <form
               onSubmit={(e) => {
