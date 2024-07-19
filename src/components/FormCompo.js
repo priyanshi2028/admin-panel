@@ -13,7 +13,7 @@ const FormCompo = () => {
   const handleSubmit = (event) => {
     // event.preventDefault();
     axios
-      .post("http://localhost:8080/", formData)
+      .post("https://backend-21ho.onrender.com/", formData)
       .then((response) =>{
         alert(response.data.message)
         console.log("oiujyt")
@@ -29,15 +29,15 @@ const FormCompo = () => {
   };
 
   return (
-    <>
+    <div className="w-10/12 mx-auto my-4 p-5 shadow-md">
     
-      <h2 className="text-xs text-center text-indigo-500 tracking-widest font-medium title-font mb-1">
+      <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
       ADD YOUR DATA
       </h2>
-      <h1 className="sm:text-3xl text-center text-2xl font-medium title-font mb-4 text-gray-900">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-8 text-gray-900">
        NEW USER
       </h1>
-      <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
+      <form onSubmit={handleSubmit} className=" mx-auto">
         <div className="relative z-0 w-full mb-5 group">
           <input
             type="text"
@@ -101,12 +101,12 @@ const FormCompo = () => {
 
         <button
           type="submit"
-          className="text-white md:ml-60 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 };
 
