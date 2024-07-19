@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <>
-      <div className="md:flex ">
+      <div className="md:flex w-full ">
         <div className="md:w-4/5 my-4">
           <div className="w-10/12 mx-auto text-white rounded-md shadow-md bg-blue-600  py-10 px-5">
             <p className="text-4xl font-bold mb-4">Hello Admin</p>
@@ -17,7 +17,7 @@ function App() {
             <Route path="/all" element={<DataTable />} />
           </Routes>
         </div>
-        <div className="md:w-1/5 w-full md:bg-gray-200 p-4 fixed md:right-0 gap-5 md:h-full flex justify-center md:justify-start md:flex-col ">
+        <div className="md:w-1/5 w-full md:bg-gray-200 p-4 md:fixed md:right-0 gap-5 md:h-full flex justify-center md:justify-start md:flex-col ">
           <Link to="/" className=" bg-blue-600 text-white py-2 px-4 rounded">
             Add Data
           </Link>
